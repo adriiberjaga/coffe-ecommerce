@@ -1,12 +1,13 @@
 
 import './App.css'
+import AppRouter from './routes/Router'
 
 function App() {
 
 
   return (
     <>
-      <h2>Hola</h2>
+      <AppRouter />
     </>
   )
 }

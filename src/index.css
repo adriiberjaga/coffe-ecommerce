@@ -2,7 +2,17 @@
 margin: 0;
 padding: 0;
 box-sizing: border-box;
+font-family: 'Ubuntu', sans-serif;
 }
+/* src/assets/fonts/fonts.css */
+@font-face {
+  font-family: 'Ubuntu';
+  src: url('./assets/fonts/Ubuntu/Ubuntu-Regular.ttf');
+  font-weight: 400;
+  font-style: normal;
+}
+
+
 /* 1. Use a more-intuitive box-sizing model */
 *, *::before, *::after {
     box-sizing: border-box;
@@ -32,12 +42,6 @@ box-sizing: border-box;
     overflow-wrap: break-word;
   }
   /* 8. Improve line wrapping */
-  p {
-    text-wrap: pretty;
-  }
-  h1, h2, h3, h4, h5, h6 {
-    text-wrap: balance;
-  }
   /*
     9. Create a root stacking context
   */
