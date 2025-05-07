@@ -1,7 +1,12 @@
-import React from 'react'
+import Banner from '../../components/ts/Banner'
+import HomeDown from '../ts/HomeDown'
 
 export default function Home() {
   return (
-    <div>Home</div>
+    <>
+    <Banner />
+    <HomeDown />
+    </>
+
   )
 }

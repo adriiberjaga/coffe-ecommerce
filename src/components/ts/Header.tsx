@@ -1,11 +1,15 @@
 import "../css/Header.css";
-import logo from "../../assets/images/logo.jpg";
+import logo from "../../assets/images/logoo.png";
 import { NavLink } from "react-router-dom";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export default function Header() {
+
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
+  useEffect(() => {
+    document.body.classList.toggle('no-scroll', isMenuOpen)
+  }, [isMenuOpen])
   return (
     <header className="header-header">
       <div>
