@@ -209,31 +209,39 @@
   transform: translateY(-3px);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
-
+@media (max-width: 1024px) {
+  .homeDown-testimonials-container,
+  .homeDown-extra-info,
+  .homeDown-divMain {
+    display: flex;
+    flex-direction: column;
+    margin: 0 10%;
+  }
+}
 /* Responsive Adjustments */
 @media (max-width: 768px) {
   .homeDown-title {
     font-size: 2rem;
   }
-  
+
   .homeDown-subtitle {
     font-size: 1rem;
   }
-  
+
   .homeDown-divMain-1,
   .homeDown-divMain-2,
   .homeDown-divMain-3 {
     padding: 1.5rem;
   }
-  
+
   .homeDown-divMain-left__text {
     font-size: 1.1rem;
   }
-  
+
   .homeDown-divMain-rigth__text {
     font-size: 1rem;
   }
-  
+
   .homeDown-cta {
     padding: 2rem;
   }
