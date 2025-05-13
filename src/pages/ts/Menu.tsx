@@ -2,6 +2,7 @@ import { useState } from "react";
 import BannerMenu from "../../components/ts/BannerMenu";
 import MenuProducts from "../../content/MenuProducts";
 import "../css/Menu.css";
+import { Link } from "react-router-dom";
 
 export default function Menu() {
   const [category, setCategory] = useState("todos");
@@ -15,10 +16,14 @@ export default function Menu() {
         );
 
   const orderProducts = (products: any) => {
-    if (order === "menor") {
+    if (order === "all") {
+      return products;
+    } else if (order === "menor") {
       return [...products].sort((a, b) => a.price - b.price);
     } else if (order === "mayor") {
       return [...products].sort((a, b) => b.price - a.price);
+    } else if (order === "populares") {
+      return [...products].sort((a, b) => a.quantity - b.quantity).slice(0, 5); // no funiona, en realidad pone primero los quantity mas bajos
     } else {
       return products;
     }
@@ -37,8 +42,11 @@ export default function Menu() {
             value={order}
             onChange={(e) => setOrder(e.target.value)}
           >
-            <option value="ordenar">Ordenar por:</option>
-            <option value="normal">Más comprados</option>
+            <option disabled hidden value="ordenar">
+              Ordenar por:
+            </option>
+            <option value="all">Todos</option>
+            <option value="populares">Más comprados</option>
             <option value="menor">Precio: menor a mayor</option>
             <option value="mayor">Precio: mayor a menor</option>
           </select>
@@ -68,7 +76,9 @@ export default function Menu() {
               />
               <h5 className="product-name">{product.title}</h5>
               <p className="product-price">{product.price} €</p>
-              <button className="product-button">Ver más</button>
+              <Link to="/menu/${product.id}">
+                <button className="product-button">Ver más</button>
+              </Link>
             </div>
           ))}
         </div>

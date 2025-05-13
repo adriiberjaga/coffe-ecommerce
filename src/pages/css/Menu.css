@@ -2,7 +2,7 @@
 .menu-section {
   padding: 2rem;
   background-color: #f9f9f9;
-  font-family: 'Helvetica Neue', sans-serif;
+  font-family: "Helvetica Neue", sans-serif;
 }
 
 /* Categorías */
@@ -86,4 +86,30 @@
 
 .product-button:hover {
   background-color: #7b3e1d;
+}
+/* Estilo para el <select> de orden */
+.menu-categories select {
+  padding: 0.6rem 1rem;
+  font-size: 1rem;
+  border: 2px solid #ccc;
+  border-radius: 25px;
+  background-color: white;
+  color: #333;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg width='16' height='16' fill='gray' viewBox='0 0 16 16'%3E%3Cpath d='M1.5 5l6 6 6-6'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 1rem center;
+  background-size: 12px;
+  min-width: 180px;
+}
+
+.menu-categories select:focus {
+  border-color: #333;
+  outline: none;
+}
+
+.menu-categories select:hover {
+  background-color: #f0f0f0;
 }
