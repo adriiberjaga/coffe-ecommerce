@@ -1,3 +1,10 @@
+import cafeGrano1 from  '../assets/images/cafeGrano1.jpg'
+import cafeGrano2 from  '../assets/images/cafeGrano2.jpg'
+import cafeGrano3 from  '../assets/images/cafeGrano3.jpg'
+import cafeGrano4 from  '../assets/images/cafeGrano4.jpg'
+import cafeGrano5 from  '../assets/images/cafeGrano5.jpg'
+
+
 interface MenuProductsInterface {
   title: string;
   price: number;
@@ -11,7 +18,7 @@ const MenuProducts: MenuProductsInterface[] = [
   {
     title: "Café Etiopía",
     price: 12.99,
-    image: "/images/etiopia.png",
+    image: cafeGrano1,
     description: "Café de origen único, con un sabor afrutado y floral.",
     category: "En grano",
     quantity: 50,
@@ -35,7 +42,7 @@ const MenuProducts: MenuProductsInterface[] = [
   {
     title: "Café Perú Orgánico",
     price: 14.99,
-    image: "/images/peru.png",
+    image: cafeGrano2,
     description: "Café orgánico con sabor suave y dulce.",
     category: "En grano",
     quantity: 35,
@@ -59,7 +66,7 @@ const MenuProducts: MenuProductsInterface[] = [
   {
     title: "Café Costa Rica",
     price: 13.49,
-    image: "/images/costarica.png",
+    image: cafeGrano3,
     description: "Café de alta calidad con un sabor limpio y balanceado.",
     category: "En grano",
     quantity: 25,
@@ -83,7 +90,7 @@ const MenuProducts: MenuProductsInterface[] = [
   {
     title: "Café México",
     price: 13.99,
-    image: "/images/mexico.png",
+    image: cafeGrano4,
     description: "Sabor dulce y cremoso con notas de chocolate.",
     category: "En grano",
     quantity: 45,
@@ -91,7 +98,7 @@ const MenuProducts: MenuProductsInterface[] = [
   {
     title: "Café Jamaica Blue Mountain",
     price: 29.99,
-    image: "/images/jamaica.png",
+    image: cafeGrano5,
     description: "El café más exclusivo del mundo, con un sabor suave y afrutado.",
     category: "En grano",
     quantity: 10,

@@ -31,7 +31,7 @@ export default function Menu() {
             <div key={index} className="menu-product-card">
               <img src={product.image} alt={product.title} className="product-image" />
               <h5 className="product-name">{product.title}</h5>
-              <p className="product-price">{product.price}</p>
+              <p className="product-price">{product.price} €</p>
               <button className="product-button">Ver más</button>
             </div>
           ))}
