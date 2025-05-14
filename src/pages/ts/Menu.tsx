@@ -5,6 +5,10 @@ import "../css/Menu.css";
 import { Link } from "react-router-dom";
 
 export default function Menu() {
+  window.scrollTo(0, 0);
+  // esta linea hace que al viajar desde la home, la página
+  // lleve al usuario al top 0
+
   const [category, setCategory] = useState("todos");
   const [order, setOrder] = useState("ordenar");
 
@@ -76,7 +80,7 @@ export default function Menu() {
               />
               <h5 className="product-name">{product.title}</h5>
               <p className="product-price">{product.price} €</p>
-              <Link to="/menu/${product.id}">
+              <Link to={`/menu/${product.id}`}>
                 <button className="product-button">Ver más</button>
               </Link>
             </div>

@@ -6,6 +6,7 @@ import cafeGrano5 from  '../assets/images/cafeGrano5.jpg'
 
 
 interface MenuProductsInterface {
+  id: number;
   title: string;
   price: number;
   image: string;
@@ -16,6 +17,7 @@ interface MenuProductsInterface {
 
 const MenuProducts: MenuProductsInterface[] = [
   {
+    id: 1,
     title: "Café Etiopía",
     price: 12.99,
     image: cafeGrano1,
@@ -24,6 +26,7 @@ const MenuProducts: MenuProductsInterface[] = [
     quantity: 50,
   },
   {
+    id: 2,
     title: "Café Colombia",
     price: 10.99,
     image: "/images/colombia.png",
@@ -32,6 +35,7 @@ const MenuProducts: MenuProductsInterface[] = [
     quantity: 40,
   },
   {
+    id: 3,
     title: "Cápsulas Intenso",
     price: 8.49,
     image: "/images/capsulas.png",
@@ -40,6 +44,7 @@ const MenuProducts: MenuProductsInterface[] = [
     quantity: 100,
   },
   {
+    id: 4,
     title: "Café Perú Orgánico",
     price: 14.99,
     image: cafeGrano2,
@@ -48,6 +53,7 @@ const MenuProducts: MenuProductsInterface[] = [
     quantity: 35,
   },
   {
+    id: 5,
     title: "Café Brasil",
     price: 11.50,
     image: "/images/brasil.png",
@@ -56,6 +62,7 @@ const MenuProducts: MenuProductsInterface[] = [
     quantity: 60,
   },
   {
+    id: 6,
     title: "Cápsulas Decaf",
     price: 9.99,
     image: "/images/decaf.png",
@@ -64,6 +71,7 @@ const MenuProducts: MenuProductsInterface[] = [
     quantity: 120,
   },
   {
+    id: 7,
     title: "Café Costa Rica",
     price: 13.49,
     image: cafeGrano3,
@@ -72,6 +80,7 @@ const MenuProducts: MenuProductsInterface[] = [
     quantity: 25,
   },
   {
+    id: 8,
     title: "Café Guatemala",
     price: 12.49,
     image: "/images/guatemala.png",
@@ -80,6 +89,7 @@ const MenuProducts: MenuProductsInterface[] = [
     quantity: 30,
   },
   {
+    id: 9,
     title: "Cápsulas Noche Suave",
     price: 7.99,
     image: "/images/noche.png",
@@ -88,6 +98,7 @@ const MenuProducts: MenuProductsInterface[] = [
     quantity: 80,
   },
   {
+    id: 10,
     title: "Café México",
     price: 13.99,
     image: cafeGrano4,
@@ -96,6 +107,7 @@ const MenuProducts: MenuProductsInterface[] = [
     quantity: 45,
   },
   {
+    id: 11,
     title: "Café Jamaica Blue Mountain",
     price: 29.99,
     image: cafeGrano5,
@@ -104,6 +116,7 @@ const MenuProducts: MenuProductsInterface[] = [
     quantity: 10,
   },
   {
+    id: 12,
     title: "Café Sumatra Mandheling",
     price: 16.99,
     image: "/images/sumatra.png",
@@ -112,6 +125,7 @@ const MenuProducts: MenuProductsInterface[] = [
     quantity: 50,
   },
   {
+    id: 13,
     title: "Cápsulas Expresso Forte",
     price: 8.99,
     image: "/images/expresso.png",
@@ -120,6 +134,7 @@ const MenuProducts: MenuProductsInterface[] = [
     quantity: 90,
   },
   {
+    id: 14,
     title: "Café Etiopía Yirgacheffe",
     price: 15.99,
     image: "/images/yirgacheffe.png",
@@ -128,6 +143,7 @@ const MenuProducts: MenuProductsInterface[] = [
     quantity: 60,
   },
   {
+    id: 15,
     title: "Café Kenia AA",
     price: 17.99,
     image: "/images/kenya.png",
@@ -136,6 +152,7 @@ const MenuProducts: MenuProductsInterface[] = [
     quantity: 40,
   },
   {
+    id: 16,
     title: "Café Blue Mountain Blend",
     price: 18.99,
     image: "/images/blue-mountain.png",
@@ -144,6 +161,7 @@ const MenuProducts: MenuProductsInterface[] = [
     quantity: 20,
   },
   {
+    id: 17,
     title: "Café Taza de Oro",
     price: 9.49,
     image: "/images/taza.png",
@@ -152,6 +170,7 @@ const MenuProducts: MenuProductsInterface[] = [
     quantity: 50,
   },
   {
+    id: 18,
     title: "Café de la Finca La Loma",
     price: 20.99,
     image: "/images/laloma.png",
@@ -160,6 +179,7 @@ const MenuProducts: MenuProductsInterface[] = [
     quantity: 15,
   },
   {
+    id: 19,
     title: "Café Robusta",
     price: 7.99,
     image: "/images/robusta.png",
@@ -168,6 +188,7 @@ const MenuProducts: MenuProductsInterface[] = [
     quantity: 100,
   },
   {
+    id: 20,
     title: "Cápsulas Nespresso Compatibles",
     price: 8.49,
     image: "/images/nespresso.png",
@@ -176,6 +197,7 @@ const MenuProducts: MenuProductsInterface[] = [
     quantity: 200,
   },
   {
+    id: 21,
     title: "Café Panamá Geisha",
     price: 39.99,
     image: "/images/panama.png",
@@ -183,8 +205,7 @@ const MenuProducts: MenuProductsInterface[] = [
     category: "En grano",
     quantity: 5,
   },
-  // Añade más productos si es necesario, hasta 30
-  // Aquí están los primeros 20
 ];
+
 
 export default MenuProducts;
