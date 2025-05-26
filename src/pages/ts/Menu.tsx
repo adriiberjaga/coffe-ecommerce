@@ -1,16 +1,27 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import BannerMenu from "../../components/ts/BannerMenu";
 import MenuProducts from "../../content/MenuProducts";
 import "../css/Menu.css";
 import { Link } from "react-router-dom";
 
 export default function Menu() {
-  window.scrollTo(0, 0);
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   // esta linea hace que al viajar desde la home, la página
   // lleve al usuario al top 0
 
   const [category, setCategory] = useState("todos");
   const [order, setOrder] = useState("ordenar");
+
+  // funcionalidad UX
+  useEffect(() => {
+    console.log("Menu montado");
+
+    return () => {
+      console.log("Menu desmontado");
+    };
+  }, []);
 
   const filteredProducts =
     category === "todos"
