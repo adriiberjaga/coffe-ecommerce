@@ -3,6 +3,7 @@ import logo from "../../assets/images/logoo.png";
 import { NavLink } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { CartIcon } from "../../content/utilities";
+import CartContent from "../../context/CartContent";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -25,9 +26,8 @@ export default function Header() {
       {modalCart && (
         <div className="modal-overlay">
           <div className="modal-content">
-            <h2>Tu carrito</h2>
-            {/* Aquí puedes renderizar el contenido del carrito */}
-            <button onClick={() => setModalCart(false)}>Cerrar</button>
+            {<CartContent></CartContent>}
+            <button onClick={() => setModalCart(false)}>X</button>
           </div>
         </div>
       )}
