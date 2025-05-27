@@ -1,8 +1,10 @@
 import "../css/ProductDetail.css";
 import Products from "../../content/MenuProducts";
 import { Link, useParams } from "react-router-dom";
+import { useCart } from "../../context/CartContext";
 
 export default function ProductDetail() {
+  const { addToCart } = useCart();
   const { id } = useParams();
 
   const product = Products.find((item) => item.id === Number(id));
@@ -28,7 +30,12 @@ export default function ProductDetail() {
             {product?.price && (
               <p className="productDetail-price">{product.price} €</p>
             )}
-            <button className="productDetail-button">Añadir al carrito</button>
+            <button
+              onClick={() => addToCart(product)}
+              className="productDetail-button"
+            >
+              Añadir al carrito
+            </button>
           </div>
         </div>
       </div>

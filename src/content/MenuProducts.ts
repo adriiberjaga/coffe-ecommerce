@@ -5,7 +5,7 @@ import cafeGrano4 from  '../assets/images/cafeGrano4.jpg'
 import cafeGrano5 from  '../assets/images/cafeGrano5.jpg'
 
 
-interface MenuProductsInterface {
+export interface MenuProductsInterface {
   id: number;
   title: string;
   price: number;
